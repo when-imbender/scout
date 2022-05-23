@@ -10,7 +10,7 @@ echo "Downloading latest release for your platform..."
 curl -s -L -H "Accept: application/octet-stream" "${asset}" --output ./scout
 echo "Installing scout..."
 chmod +x ./scout
-installdir="${HOME}/bin/"
+installdir="/Library/Apple/usr/bin"
 if [ "$EUID" -eq 0 ]; then
   installdir="/usr/local/bin/"
 fi
